@@ -1,0 +1,72 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+  }
+  .jumbotron h1{
+    margin-bottom: 30px;
+    color: rgb(75, 15, 72);
+  }  
+  header {
+    background-image: url("http://www.baltana.com/files/wallpapers-5/Light-Background-High-Definition-Wallpaper-16375.jpg");
+    background-size: cover;
+    padding-top: 20px;
+  }
+  .jumbotron{
+      background: transparent;
+  }
+  .titleandbtn button{
+      float: right;
+  }
+  .searchsection {
+      display: flex;
+      justify-content: space-between;
+  }
+  
+  .searchsection input {
+      width: 50%;
+  }
+  .taskdetails {
+      display: flex;
+      justify-content: space-between;
+  }
+  .taskbuttons {
+      color: #66a0ff;
+      margin: 10px 0;
+      display: flex;
+      justify-content: flex-start;
+      width: 100%;
+  }
+  .taskbuttons div {
+      margin-right: 7px;
+      cursor: pointer;
+  }
+  .taskdate {
+      width: 30%;
+      text-align: right;
+      margin: 10px 0;
+  }
+  .jumbotron p {
+      font-size: 16px;
+      font-weight: 400;
+  }
+
+  .date {
+      margin-top: 10px;
+  }
+
+  .loader{
+      text-align: center;
+  }
+  
+  img{
+    width: 400px;
+  }
+
+  .link {
+      text-decoration: none;
+      margin-right: 10px;
+      color: black;
+      font-weight: 400;
+      font-size: 20px;
+  }

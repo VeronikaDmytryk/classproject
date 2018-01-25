@@ -1,0 +1,45 @@
+<div class="content" ng-controller="tasksDashboard">
+        <div class="container loader" ng-hide="loaded">
+          <img src="http://datainflow.com/wp-content/uploads/2017/09/loader.gif" alt="loading">
+        </div>
+        <div class="container">
+          <div class="col-md-4" ng-repeat="column in columns">
+            <div class="titleandbtn">
+              <button class="btn btn-warning" ng-click="addClick(column.id)">Add</button>
+              <h2>{{column.title | uppercase}}</h2>
+            </div>
+            <div class="tasks">
+              <div class={{column.style}} ng-repeat="task in column.tasks | tasksFilter: searchKeyword">
+                <!-- Additional filters - | tasksFilter: searchKeyword, | limitTo = "2" -->
+                <div ng-hide="task.editMode">
+                  <h3>{{task.title}}</h3>
+                  <p>{{task.description}}</p>
+                </div>
+                <div ng-show="task.editMode">
+                  <input type="text" placeholder="Please enter your title" ng-model="task.title">
+                  <textarea name="" id="" cols="30" rows="5" ng-model="task.description" placeholder="Please add description"></textarea>
+                </div>
+                <div class="taskdetails">
+                  <div class="taskbuttons">
+                    <div ng-hide="task.editMode">
+                      <a href="" ng-click="editClick(column.id, task.id)">Edit</a>
+                    </div>
+                    <div ng-show="task.editMode">
+                      <a href="" ng-click="saveClick(column.id, task.id)">Save</a>
+                      <a href="" ng-click="cancelClick(column.id, task.id)">Cancel</a>
+                    </div>
+                    <div>
+                      <a href="" ng-click="deleteClick(column.id, task.id)">Delete</a>
+                    </div>
+                    <div>
+                      <a href="">{{column.buttons[0]}}</a>
+                      <a href="">{{column.buttons[1]}}</a>
+                    </div>
+                  </div>
+                  <div class="date text-right">{{task.date}}</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>

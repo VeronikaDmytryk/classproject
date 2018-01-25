@@ -1,0 +1,27 @@
+[
+    {
+        "id": 1,
+        "title": "To Do",
+        "style": "alert alert-info",
+        "tasks": [{ "id": 1, "title": "Open bank account", "description": "Go to First Tech", "date": "12/22/17" },
+        { "id": 2, "title": "Annual check up", "description": "Make an appointment", "date": "12/22/17" },
+        { "id": 3, "title": "111", "description": "222", "date": "12/22/17" },
+        { "id": 7, "title": "222", "description": "333", "date": "12/22/17" }],
+        "buttons": ["In Progress", "Done"]
+    },
+    {
+        "id": 2,
+        "title": "In Progress",
+        "style": "alert alert-warning",
+        "tasks": [{ "id": 4, "title": "Web Dev class", "description": "STEP Academy", "date": "12/22/17" }],
+        "buttons": ["To Do", "Done"]
+    },
+    {
+        "id": 3,
+        "title": "Done",
+        "style": "alert alert-success",
+        "tasks": [{ "id": 5, "title": "Conference", "description": "School in Seattle", "date": "12/22/17" },
+        { "id": 6, "title": "Walk the dog", "description": "Go to the dog park", "date": "12/22/17" }],
+        "buttons": ["To Do", "In Progress"]
+    }
+]

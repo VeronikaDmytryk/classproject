@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myOrganizer">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
+  <title>My Organizer</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="./css/main.css">
+  <script src="bower_components/angular/angular.js"></script>
+  <script src="bower_components/fusioncharts/fusioncharts.js"></script>
+  <script src="bower_components/angular-route/angular-route.js"></script>
+  <script src="app.js"></script>
+  <script src="services/tasks-service.js"></script>
+  <script src="controllers/tasks-dashboard.js"></script>
+  <script src="filters/tasks-filter.js"></script>
+  <script src="directives/header.js"></script>
+  <script src="controllers/task-reports.js"></script>
+</head>
+
+<body>
+  <noscript>
+    You need to enable JavaScript to run this app.
+  </noscript>
+  <div id="root">
+    <header>
+      <div class="container">
+        <a href="#/dashboard" class="link">Dashboard</a>
+        <a href="#/reports" class="link">Reports</a>    
+    </div>
+    <div header></div>
+    </header>
+    <div ng-view></div>
+  </div>
+</body>
+
+</html>

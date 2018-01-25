@@ -1,0 +1,14 @@
+{
+  "name": "my-organizer",
+  "version": "1.0.0",
+  "devDependencies": {
+    "http-server": "0.10.0"
+  },
+  "scripts": {
+    "start": "http-server -a localhost -p 3000 -c-1 ./app",
+    "postinstall": "bower install"
+  },
+  "dependencies": {
+    "bower": "^1.8.2"
+  }
+}

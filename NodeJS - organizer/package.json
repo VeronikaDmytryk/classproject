@@ -1,0 +1,19 @@
+{
+  "name": "organizer",
+  "version": "1.0.0",
+  "description": "simple Trello like app",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server",
+    "init-org-db": "node ./src/init-organizer-database.js"
+  },
+  "dependencies": {
+    "express": "^4.16.2",
+    "mongodb": "^2.2.32"
+  },
+  "author": "Veronika Dmytryk",
+  "license": "ISC",
+  "engines": {
+    "node": "~0.10.0 || ~4.2.0"
+  }
+}
